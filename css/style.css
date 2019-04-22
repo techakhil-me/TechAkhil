@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600');
+html{
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:centuri gothic;
+  font-size-adjust: auto;
+
+}
+
+.logo img{
+  position: absolute;
+  z-index: 100;
+  float: left;
+  width: auto;
+  height: 15%;
+  padding-left: 1.83%;
+  padding-top: 0.13%;
+}
+header{
+  background-image:url(../background/mountain.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#particles-js{
+ position: absolute;
+ height: 15%;
+ width: 100%;
+  background: #093278;
+  opacity: 0.5;
+}
+
+
+
+
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.title h1{
+  color: #fff;
+  font-family: 'Archivo', sans-serif;
+  top: 50%;
+  left: 50%;
+  font-size:10vw;
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.01vw ;
+  -webkit-text-stroke-color: black;
+  cursor: none;
+}
+.hire{
+  position: absolute;
+  top: 73%;
+  right: 40%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 3.5vw;
+  width:18.74vw;
+}
+
+.hire::before{
+  content: 'Hire';
+  color: #fff;
+  text-align: center;
+  line-height:3.5vw;
+  font-family: 'Josefin Slab', serif;
+  font-size: 2.2vw;
+  font-weight: bold;
+  position: absolute;
+  right: 10%;
+  width: 100%;
+  height:100%;
+  border: 0.15vw solid;
+  background-color:#1D1F6E;
+  border-radius: 100vw;
+  transition: 0.5s;
+  z-index: 1;
+
+}
+.hire:hover::before{
+
+  font-family: 'Font Awesome\ 5 Free';
+  content: '\f1e0';
+  color: #000;
+  text-align: center;
+  line-height:3.5vw;
+  width: 3.5vw;
+  right:15%;
+  background-color: #fff;
+
+}
+
+.hire li{
+  position: absolute;
+  right: 20%;
+  list-style: none;
+  transition: 1s;
+
+}
+
+.hire li a{
+  display: block;
+  font-size: 2vw;
+  width:3.5vw;
+  height: 3.5vw;
+  line-height: 3.5vw;
+  text-align: center;
+  background: #392843;
+  color: #fff;
+  border-radius: 50%;
+  width: 3.5vw;
+  transition: 1s;
+}
+
+
+
+ .hire li:nth-child(1) a{
+   background: #dd4b39;
+ }
+
+.hire li:nth-child(2) a img{
+  border-radius: 3.5vw;
+  width: 3.5vw;
+ background: #00b22d;
+ }
+
+ .hire li:nth-child(3) a{
+   background: #333;
+ }
+
+ .hire li:nth-child(4) a{
+   background: #0077B5;
+ }
+
+.hire:hover li:nth-child(1) a{
+  transform: translateX(-18.73vw) rotate(-360deg);
+}
+
+.hire:hover li:nth-child(2) a{
+  transform: translateX(-14.05vw) rotate(-360deg);
+}
+
+.hire:hover li:nth-child(3) a{
+  transform: translateX( -9.37vw) rotate(-360deg);
+}
+
+.hire:hover li:nth-child(4) a{
+  transform: translateX( -4.69vw) rotate(-360deg);
+}
+
+
+ul{
+  position: absolute;
+  top: 73%;
+  left: -4%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 3.5vw;
+  width:18.74vw;
+  transform: rotate(-90deg);
+}
+
+ul::before{
+  content: 'Follow';
+  color: #fff;
+  text-align: center;
+  line-height:3.5vw;
+  font-family: 'Josefin Slab', serif;
+  font-size: 2.2vw;
+  margin-left: -1vw;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  height:100%;
+  border: 0.15vw solid;
+  background-color:#1D1F6E;
+  border-radius: 100vw;
+  transition: 0.5s;
+  z-index: 1;
+
+}
+ul:hover::before{
+  font-family: 'Font Awesome\ 5 Free';
+  content: '\f1e0';
+  color: #000;
+  text-align: center;
+  line-height:3.5vw;
+  width: 3.8vw;
+  background-color: #fff;
+
+}
+
+
+ul li{
+  position: absolute;
+  list-style: none;
+  transition: 1s;
+
+}
+
+
+ul li a{
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 2vw;
+  width:3.5vw;
+  height: 3.5vw;
+  line-height: 3.5vw;
+  text-align: center;
+  background: #392843;
+  color: #fff;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+
+
+ ul li:nth-child(1) a{
+   background: #3b5999;
+   transform: rotate(90deg);
+ }
+
+
+ ul li:nth-child(2) a{
+   background: #25D366;
+   transform: rotate(-90deg);
+ }
+
+ ul li:nth-child(3) a{
+   background: #e4405f;
+
+ }
+
+ ul li:nth-child(4) a{
+   background: #cd201f;
+ }
+
+ul:hover li:nth-child(1) a{
+  transform: translateX(4.69vw) rotate(450deg);
+}
+
+ul:hover li:nth-child(2) a{
+  transform: translateX(9.37vw) rotate(450deg);
+}
+
+ul:hover li:nth-child(3) a{
+  transform: translateX(14.06vw) rotate(450deg);
+}
+
+ul:hover li:nth-child(4) a{
+  transform: translateX(18.74vw) rotate(450deg);
+}
